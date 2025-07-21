@@ -10,13 +10,16 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms 
 ## 🎥 Demo & Preview
 
 ### 📹 Live Demo Video
-[![RAG Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![RAG Demo Video]([https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtu.be/xYA6vNehf7g))
 
 *Click the image above to watch the full demo on YouTube*
 
 ### 📸 Application Preview
 <div align="center">
-<img src="screenshots/app-preview.png" alt="RAG Application Interface" width="800">
+<img src="screenshots/docPreview.png" alt="RAG Application Interface" width="800">
+</div>
+<div align="center">
+<img src="screenshots/urlPreview.png" alt="RAG Application Interface" width="800">
 </div>
 
 *Interactive web interface for document loading and AI-powered question answering*
