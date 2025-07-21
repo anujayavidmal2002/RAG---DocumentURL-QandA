@@ -9,8 +9,5 @@ sentence-transformers
 pypdf
 beautifulsoup4
 requests
-<<<<<<< HEAD
 lxml
-=======
-lxml
->>>>>>> d6619e866fb706ebc7d55f0146245fb4e4245c5d
+
