@@ -7,34 +7,19 @@
 
 A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms any web document into an intelligent knowledge base. Ask questions and get accurate, contextual answers powered by cutting-edge AI technology.
 
-## 🎥 Demo & Screenshots
+## 🎥 Demo & Preview
 
 ### 📹 Live Demo Video
 [![RAG Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 *Click the image above to watch the full demo on YouTube*
 
-### 📸 Application Screenshots
-
+### 📸 Application Preview
 <div align="center">
-
-| Main Interface | Document Processing | Q&A Results |
-|:---:|:---:|:---:|
-| ![Main Interface](screenshots/main-interface.png) | ![Processing](screenshots/document-processing.png) | ![Results](screenshots/qa-results.png) |
-| *Clean, intuitive web interface* | *Real-time document loading* | *AI-powered answers with context* |
-
+<img src="screenshots/app-preview.png" alt="RAG Application Interface" width="800">
 </div>
 
-#### 🖥️ Desktop View
-![Desktop Screenshot](screenshots/desktop-view.png)
-*Full desktop experience with two-column layout*
-
-#### 📱 Mobile Responsive
-<div align="center">
-<img src="screenshots/mobile-view.png" width="300" alt="Mobile View">
-</div>
-
-*Optimized for mobile devices*
+*Interactive web interface for document loading and AI-powered question answering*
 
 ---
 
@@ -127,11 +112,7 @@ rag-langchain-master/
 ├── 📖 README.md               # This file
 ├── 📄 LICENSE                 # MIT license
 └── 📸 screenshots/            # Demo images
-    ├── main-interface.png
-    ├── document-processing.png
-    ├── qa-results.png
-    ├── desktop-view.png
-    └── mobile-view.png
+    └── app-preview.png
 ```
 
 ## ⚙️ Configuration Options
