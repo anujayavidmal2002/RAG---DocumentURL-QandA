@@ -9,6 +9,9 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms 
 
 ## 🎥 Demo & Preview
 
+### 📹 Hosted Web App
+[Hosted App]([https://youtu.be/xYA6vNehf7g](https://rag---documenturl-appnda-cglivmdvdtsscyeea4eqjh.streamlit.app/))
+
 ### 📹 Live Demo Video
 [RAG Demo Video](https://youtu.be/xYA6vNehf7g)
 
