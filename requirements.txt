@@ -7,3 +7,6 @@ python-dotenv
 streamlit
 sentence-transformers
 pypdf
+beautifulsoup4
+requests
+lxml
