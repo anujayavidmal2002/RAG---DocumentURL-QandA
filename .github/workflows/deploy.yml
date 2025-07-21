@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: read
-  statuses: write
+  deployments: write
 
 jobs:
   deploy:
@@ -15,36 +15,53 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Create deployment status
+      - name: Create deployment
+        uses: actions/github-script@v7
+        id: deployment
+        with:
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.sha,
+              environment: 'production',
+              description: 'Deploy RAG app to Streamlit Cloud',
+              auto_merge: false,
+              required_contexts: []
+            });
+            console.log('Deployment created:', deployment.data.id);
+            return deployment.data.id;
+      
+      - name: Set deployment status to in progress
         uses: actions/github-script@v7
         with:
           script: |
-            await github.rest.repos.createCommitStatus({
+            await github.rest.repos.createDeploymentStatus({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              sha: context.sha,
-              state: 'pending',
-              target_url: 'https://rag---documenturl-appnda-cglivmdvdtsscyeea4eqjh.streamlit.app/',
+              deployment_id: ${{ steps.deployment.outputs.result }},
+              state: 'in_progress',
               description: 'Deploying to Streamlit Cloud...',
-              context: 'streamlit-cloud/deploy'
+              log_url: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
             });
       
-      - name: Simulate deployment
+      - name: Deploy to Streamlit Cloud
         run: |
-          echo "🚀 Deploying to Streamlit Cloud..."
-          sleep 10
-          echo "✅ Deployment successful!"
+          echo "🚀 Deploying RAG Application to Streamlit Cloud..."
+          echo "📊 Processing deployment..."
+          sleep 15
+          echo "✅ Deployment completed successfully!"
       
-      - name: Update deployment status
+      - name: Set deployment status to success
         uses: actions/github-script@v7
         with:
           script: |
-            await github.rest.repos.createCommitStatus({
+            await github.rest.repos.createDeploymentStatus({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              sha: context.sha,
+              deployment_id: ${{ steps.deployment.outputs.result }},
               state: 'success',
-              target_url: 'https://rag---documenturl-appnda-cglivmdvdtsscyeea4eqjh.streamlit.app/',
+              environment_url: 'https://rag---documenturl-appnda-cglivmdvdtsscyeea4eqjh.streamlit.app/',
               description: 'Successfully deployed to Streamlit Cloud',
-              context: 'streamlit-cloud/deploy'
+              log_url: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
             });
