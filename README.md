@@ -222,12 +222,4 @@ echo "OPENAI_API_KEY=your_key_here" > .env
 
 ---
 
-<div align="center">
 
-**⭐ Star this repository if it helped you build amazing RAG applications! ⭐**
-
-[🐛 Report Bug](https://github.com/yourusername/rag-langchain-master/issues) • [✨ Request Feature](https://github.com/yourusername/rag-langchain-master/issues) • [💬 Discussions](https://github.com/yourusername/rag-langchain-master/discussions)
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
-
-</div>
