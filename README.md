@@ -12,11 +12,8 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms 
 
 ## 🎥 Demo & Preview
 
-<<<<<<< HEAD
-=======
 ### 📹 Hosted Web App
 🔗 [Live App on Streamlit](https://rag---documenturl-appnda-cglivmdvdtsscyeea4eqjh.streamlit.app/)  
->>>>>>> d6619e866fb706ebc7d55f0146245fb4e4245c5d
 
 ### 📹 Live Demo Video
 [RAG Demo Video](https://youtu.be/xYA6vNehf7g)
