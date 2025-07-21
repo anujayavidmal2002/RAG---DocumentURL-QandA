@@ -10,7 +10,7 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms 
 ## 🎥 Demo & Preview
 
 ### 📹 Live Demo Video
-[![RAG Demo Video](((https://youtu.be/xYA6vNehf7g))
+[RAG Demo Video](https://youtu.be/xYA6vNehf7g)
 
 *Click the image above to watch the full demo on YouTube*
 
