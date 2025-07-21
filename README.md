@@ -3,11 +3,15 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.47.0-red.svg)](https://streamlit.io/)
 [![LangChain](https://img.shields.io/badge/LangChain-Latest-green.svg)](https://python.langchain.com/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rag---documenturl-qanda.streamlit.app)
+[![Deployment Status](https://img.shields.io/badge/Deployed-Streamlit%20Cloud-success)](https://rag---documenturl-qanda.streamlit.app)
+[![GitHub Actions](https://github.com/anujayavidmal2002/RAG---DocumentURL-QandA/workflows/Streamlit%20Deployment%20Status/badge.svg)](https://github.com/anujayavidmal2002/RAG---DocumentURL-QandA/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms any web document into an intelligent knowledge base. Ask questions and get accurate, contextual answers powered by cutting-edge AI technology.
 
 ## 🎥 Demo & Preview
+
 
 ### 📹 Live Demo Video
 [RAG Demo Video](https://youtu.be/xYA6vNehf7g)
